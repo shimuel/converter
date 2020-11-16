@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter spec"
+    "start": "node app/server.js",
+    "debug-test": "mocha --inspect-brk test/service.js",
+    "test": "nyc --reporter=html --reporter=text mocha",
+    "coverage": "nyc --reporter html --reporter text npm test"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +16,7 @@
     "chai": "^4.2.0",
     "express": "^4.17.1",
     "mocha": "^8.2.1",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "nyc": "^15.1.0"
   }
 }

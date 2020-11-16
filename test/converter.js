@@ -1,3 +1,5 @@
+//"test": "mocha --reporter spec", - paCKAGE.JSON SPCRIPTS
+
 var expect    = require("chai").expect;
 var converter = require("../app/converter");
 
